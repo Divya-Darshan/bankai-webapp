@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/bruce-forever');
+
+
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body background image */
+body {
+  margin: 0;
+  padding: 0;
+  background: url(public/img/ban.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative; /* Needed for stacking context */
+}
+
+/* Overlay div on top of body */
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(public/img/banrebg.png) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none; /* Optional: allows clicks to pass through */
+}
+
+
+/* Navigation container */
+.nav {
+  background-color: #c47e2a75;
+  padding: 15px 30px;
+  box-shadow: 0 4px 30px rgb(35, 35, 35);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Nav element */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo link */
+nav .logo {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Bruce Forever', sans-serif;
+}
+
+/* Nav list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+/* Nav links */
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s, border-bottom 0.3s;
+  position: relative;
+}
+
+/* Hover effect */
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #f39c12;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  transition: .5s;
+  color: #f39c12;
+  text-shadow: 0 0 20px #ff0000;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive - optional */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+}
