@@ -165,7 +165,7 @@ body {
         }
     }
     .stroked-text, .afterglow, .glow-text {
-        font-size: calc(.2526 * 55vh);
+        display: none;
     }
 }
 
