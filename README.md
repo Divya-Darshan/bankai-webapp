@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/UqFyZtr.png" alt="Bankai Animation Banner" width="100%" />
+  <img src="public/img/read.png" alt="Bankai Animation Banner" width="100%" />
 </p>
 
 # 🌌 Bankai Animation – React + Vite Website
