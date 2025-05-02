@@ -13,11 +13,20 @@ function Cont() {
       </div>
 
       <div className="gallery-grid">
-        <img src="img/ban.jpg" alt="Anime 1" />
-        <img src="img/ban.jpg" alt="Anime 2" />
-        <img src="img/ban.jpg" alt="Anime 3" />
-        <img src="img/ban.jpg" alt="Anime 4" />
+        <a href="https://youtu.be/oRpZuqdpdQU?feature=shared" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/oRpZuqdpdQU/hqdefault.jpg" alt="Anime 1" />
+        </a>
+        <a href="https://youtu.be/_QV3akb-w2Y?feature=shared" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/_QV3akb-w2Y/hqdefault.jpg" alt="Anime 2" />
+        </a>
+        <a href="https://youtu.be/Cl06BG8fSpw?feature=shared" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/Cl06BG8fSpw/hqdefault.jpg" alt="Anime 3" />
+        </a>
+        <a href="https://youtu.be/IVH5HIe7kHw?feature=shared" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/IVH5HIe7kHw/hqdefault.jpg" alt="Anime 4" />
+        </a>
       </div>
+
       <b><center>My best Series of all time.</center></b>
     </div>
   );

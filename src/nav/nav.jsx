@@ -14,8 +14,8 @@ function App() {
         <nav>
           <a href='index.html' className="logo">Bankai Animation Tamil</a>
           <ul className={isPressed ? 'active' : ''}>
-            <li><a href="">Home</a></li>
-            <li><a href="">Videos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vid.html">Videos</a></li>
             <li><a href="">AboutMe</a></li>
             <li><a href="">Contact</a></li>
           </ul>
