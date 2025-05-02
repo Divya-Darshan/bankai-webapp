@@ -9,28 +9,6 @@
   box-sizing: border-box;
 }
 
-/* Body background image */
-body {
-  margin: 0;
-  padding: 0;
-  background: url(public/img/ban.jpg) no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  position: relative; /* Needed for stacking context */
-}
-
-/* Overlay div on top of body */
-.bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(public/img/banrebg.png) no-repeat center center;
-  background-size: cover;
-  z-index: 1;
-  pointer-events: none; /* Optional: allows clicks to pass through */
-}
 
 
 /* Navigation container */
