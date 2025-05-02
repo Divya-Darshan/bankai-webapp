@@ -13,13 +13,12 @@ function Cont() {
       </div>
 
       <div className="gallery-grid">
-        <img src="/img/anime1.jpg" alt="Anime 1" />
-        <img src="/img/anime2.jpg" alt="Anime 2" />
-        <img src="/img/anime3.jpg" alt="Anime 3" />
-        <img src="/img/anime4.jpg" alt="Anime 4" />
-        <img src="/img/anime5.jpg" alt="Anime 5" />
-        <img src="/img/anime6.jpg" alt="Anime 6" />
+        <img src="img/ban.jpg" alt="Anime 1" />
+        <img src="img/ban.jpg" alt="Anime 2" />
+        <img src="img/ban.jpg" alt="Anime 3" />
+        <img src="img/ban.jpg" alt="Anime 4" />
       </div>
+      <b><center>My best Series of all time.</center></b>
     </div>
   );
 }

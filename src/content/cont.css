@@ -10,12 +10,12 @@ body {
 /* Fixed spacing + layout */
 .about-container {
   padding: 4rem 2rem;
-  margin-top: 100vh; /* Push down from the top if overlapping */
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 1;
+  top: 300px;
 }
 
 .about-text {
@@ -53,4 +53,19 @@ body {
 .gallery-grid img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+center{
+  padding: 30px;
+}
+
+
+@media (max-width: 500px){
+
+  .about-container {
+
+    top: 700px;
+  }
+  
+  
 }

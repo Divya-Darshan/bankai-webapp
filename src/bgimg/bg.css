@@ -8,6 +8,7 @@ body {
     background-size: cover;
     height: 100vh;
     position: relative;
+    box-shadow: 0 0 30px rgba(184, 182, 182, 0.784);
 }
 
 .bg {
@@ -28,7 +29,7 @@ body {
         background-position: 50% 50%;
     }
     25% {
-        background-position: 300% 40%;
+        background-position: 30% 40%;
     }
     50% {
         background-position: 40% 60%;
@@ -49,20 +50,22 @@ body {
     height: 100vh;
     width: 100vw;
     text-align: center;
-    overflow: hidden;
+    
+    
 }
 
 .title div {
     position: absolute;
-    bottom: -1.7rem;
+    bottom: 170px;
     font-family: 'Blomberg', sans-serif;
     line-height: 1;
     font-weight: bold;
     color: #eeea79;
+    overflow: hidden;
 }
 
 .glow-text {
-    font-size: 10rem;
+    font-size: calc(.2526 * 80vh);
     font-weight: bold;
     color: #ecbd6e;
     text-align: center;
@@ -86,28 +89,111 @@ body {
     left: 50.5%;
     transform: translateX(-50%);
     font-family: 'Blomberg', sans-serif;
-    font-size: 10rem;
+    font-size: calc(.2526 * 80vh);
     font-weight: bold;
     color: transparent; /* Make text color transparent */
     background-clip: text; /* Apply gradient to text */
     text-align: center;
     white-space: nowrap; /* Ensure the text stays in one line */
+    overflow: hidden;
 }
 
 .stroked-text {
   position: relative;
-  font-size: 10rem;
+  font-size: calc(.2526 * 80vh);
   font-weight: bold;
   text-align: center;
   color: #ffffff; /* Text is invisible */
   white-space: nowrap; /* Prevent text wrapping */
   -webkit-text-stroke-width:2px ;
   -webkit-text-fill-color: transparent;
+    overflow: hidden;
 }
 
 
 
 
-  
+
+
+@media (max-width: 1050px){
+    .bg{
+        animation: bgMove 15s ease-in-out infinite;   
+    }
+    .stroked-text, .afterglow, .glow-text {
+        font-size: calc(.2526 * 70vh);
+    }
+}
+
+
+@media (max-width: 1000px){
+    .bg{
+        animation: bgMove 15s ease-in-out infinite;   
+    }
+
+    @keyframes bgMove {
+        0% {
+            background-position: 60% 60%;
+        }
+        25% {
+            background-position: 40% 50%;
+        }
+        50% {
+            background-position: 50% 70%;
+        }
+        75% {
+            background-position: 60% 50%;
+        }
+        100% {
+            background-position: 60% 60%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .bg{
+        animation: bgMove 15s ease-in-out infinite;   
+    }
+    @keyframes bgMove {
+        0% {
+            background-position: 50% 50%;
+        }
+        50% {
+            background-position: 55% 55%;
+        }
+        100% {
+            background-position: 50% 50%;
+        }
+    }
+    .stroked-text, .afterglow, .glow-text {
+        font-size: calc(.2526 * 55vh);
+    }
+}
+
+@media (max-width: 600px){
+    .bg{
+        animation: none;
+    }
+    .stroked-text, .afterglow, .glow-text {
+        font-size: calc(.2526 * 30vh);
+    }
+    
+}
+
+@media (max-width: 500px){
+
+    .stroked-text, .afterglow, .glow-text {
+        font-size: calc(.2526 * 27vh);
+    }
+    
+}
+
+
+@media (max-width: 400px){
+
+    .stroked-text, .afterglow, .glow-text {
+        display: none;
+
+    }
+}
 
 
