@@ -1,24 +1,21 @@
-import './bg.css'
+import './bg.css';
 
-function bg(){
-    return (
-        <>
-        <div className='title'>
-        <div  className='glow-text'>
-
-            
-            Bankai Anime Tamil
-            
+function Bg() {
+  return (
+    <>
+      <div className='title'>
+        <div className='glow-text'>
+          Bankai Anime Tamil
         </div>
-        </div>
-        
-        <div class="bg">
+      </div>
 
-        </div>
+      <div className="bg"></div>
 
-        
-        </>
-    )
+      <div className='afterglow'>
+        <div className="stroked-text">Bankai Anime Tamil</div>
+      </div>
+      </>
+  );
 }
 
-export default bg
+export default Bg;

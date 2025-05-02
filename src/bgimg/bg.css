@@ -8,10 +8,9 @@ body {
     background-size: cover;
     height: 100vh;
     position: relative;
-  }
-  
+}
 
-  .bg {
+.bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,34 +18,30 @@ body {
     height: 100%;
     background: url(/img/banrebg.png) no-repeat center center;
     filter: drop-shadow(5px 5px 10px rgb(43, 42, 42));
-    background-size: 102%; /* Slight zoom to avoid blank edges */
+    background-size: cover;
     pointer-events: none;
-  
     animation: bgMove 15s ease-in-out infinite;
-  }
-  
-  @keyframes bgMove {
+}
+
+@keyframes bgMove {
     0% {
-      background-position: 50% 50%;
+        background-position: 50% 50%;
     }
     25% {
-      background-position: 60% 40%;
+        background-position: 300% 40%;
     }
     50% {
-      background-position: 40% 60%;
+        background-position: 40% 60%;
     }
     75% {
-      background-position: 55% 45%;
+        background-position: 55% 45%;
     }
     100% {
-      background-position: 50% 50%;
+        background-position: 50% 50%;
     }
-  }
-  
-  
-  
+}
 
-  .title {
+.title {
     position: relative;
     display: flex;
     justify-content: center;
@@ -55,33 +50,64 @@ body {
     width: 100vw;
     text-align: center;
     overflow: hidden;
-  }
-  
+}
 
-  .title div {
+.title div {
     position: absolute;
-    top: 150px;
+    bottom: -1.7rem;
     font-family: 'Blomberg', sans-serif;
     line-height: 1;
     font-weight: bold;
     color: #eeea79;
-  }
-  
-  .glow-text {
+}
+
+.glow-text {
     font-size: 10rem;
     font-weight: bold;
     color: #ecbd6e;
     text-align: center;
     text-shadow: 0 0 10px #ecbd6e, 0 0 40px #ecbd6e;
     animation: glowPulse 2s ease-in-out infinite alternate;
-  }
-  
-  @keyframes glowPulse {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+@keyframes glowPulse {
     from {
-      text-shadow: 0 0 10px #ecbd6e, 0 0 40px #ecbd6e;
+        text-shadow: 0 0 10px #ecbd6e, 0 0 40px #ecbd6e;
     }
     to {
-      text-shadow: 0 0 20px #ecbd6e, 0 0 60px #ecbd6e;
+        text-shadow: 0 0 20px #ecbd6e, 0 0 60px #ecbd6e;
     }
-  }
+}
+
+.afterglow {
+    position: absolute;
+    top: 100px; /* Align exactly with .glow-text */
+    left: 50.5%;
+    transform: translateX(-50%);
+    font-family: 'Blomberg', sans-serif;
+    font-size: 10rem;
+    font-weight: bold;
+    color: transparent; /* Make text color transparent */
+    background-clip: text; /* Apply gradient to text */
+    text-align: center;
+    white-space: nowrap; /* Ensure the text stays in one line */
+}
+
+.stroked-text {
+  position: relative;
+  font-size: 10rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff; /* Text is invisible */
+  white-space: nowrap; /* Prevent text wrapping */
+  -webkit-text-stroke-width:2px ;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
   
+
+

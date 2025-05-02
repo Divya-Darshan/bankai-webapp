@@ -8,9 +8,13 @@ import Cont from './content/cont.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
+
     <BG/>
-    <Cont/>
+    
     <Nav />
+
+
+    <Cont/>
   
   </StrictMode>,
    
