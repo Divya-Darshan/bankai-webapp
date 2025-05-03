@@ -17,7 +17,6 @@ function App() {
             <li><a href="index.html">Home</a></li>
             <li><a href="vid.html">Videos</a></li>
             <li><a href="#about">AboutMe</a></li>
-            <li><a href="con.html">Contact</a></li>
           </ul>
           <button
             id='ham'
