@@ -3,7 +3,7 @@ import "./cont.css";
 
 function Cont() {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about" >
       <div className="about-text">
         <h1>About Me</h1>
         <p>

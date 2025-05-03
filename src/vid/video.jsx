@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './vid.css';
+import Cont from '../content/cont'
 
 function Video() {
   const [videos, setVideos] = useState([]);
@@ -40,6 +41,7 @@ function Video() {
   }, []);
 
   return (
+    <>
     <div className="video-container">
 
       {loading && <p className="loading-text">Loading...</p>}
@@ -62,6 +64,8 @@ function Video() {
         ))}
       </div>
     </div>
+    <Cont />
+    </>
   );
 }
 

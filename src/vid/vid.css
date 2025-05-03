@@ -4,9 +4,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html{
+    scroll-behavior: smooth;
+  }
   
   /* Body with background image */
-  body {
+  body{
     font-family: 'Arial', sans-serif;
     background-image: url('https://cdn.wallpapersafari.com/75/23/DWV8tF.jpg');
     background-size: cover; /* Ensures the image covers the entire background */
@@ -16,7 +20,10 @@
     flex-direction: column;
     align-items: center;
     color: white; /* Text color to contrast with the background */
+    box-shadow: 0 0 10px rgb(255, 0, 230), 0 0 25px rgb(255, 0, 230), 0 0 50px rgb(255, 0, 230), 0 0 65px rgb(255, 0, 230), 0 0 100px rgb(255, 0, 230);
   }
+
+  
   
   /* Navbar Styling */
   .navbar {
