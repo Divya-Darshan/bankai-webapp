@@ -5,6 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #0f0f0f;
   color: #fff;
+
 }
 
 /* Fixed spacing + layout */
@@ -15,7 +16,7 @@ body {
   margin-right: auto;
   position: relative;
   z-index: 1;
-  top: 300px;
+  top: 800px;
 }
 
 .about-text {
@@ -64,7 +65,7 @@ center{
 
   .about-container {
 
-    top: 800px;
+    top: 950px;
   }
   
   
