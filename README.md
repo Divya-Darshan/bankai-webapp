@@ -3,7 +3,7 @@
 </p>
 <br>
 <p align="center">
-  <img src="public/img/set.png" alt="Bankai Animation Banner" width="100%" style="border-radius:20px;box-shadow:0 0 30px gray;" />
+  <img src="public/img/set.png" alt="Bankai Animation Banner" height="100%" style="border-radius:20px;box-shadow:0 0 30px gray;" />
 </p>
 
 # 🌌 Bankai Animation – React + Vite Website
