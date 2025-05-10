@@ -5,14 +5,14 @@ function Bg() {
     <>
       <div className='title'>
         <div className='glow-text'>
-          Bankai Anime Tamil
+          Ani Folks
         </div>
       </div>
 
       <div className="bg"></div>
 
       <div className='afterglow'>
-        <div className="stroked-text">Bankai Anime Tamil</div>
+        <div className="stroked-text">Ani Folks</div>
       </div>
       </>
   );

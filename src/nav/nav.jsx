@@ -12,7 +12,7 @@ function App() {
     <>
       <div className='nav'>
         <nav>
-          <a href='index.html' className="logo">Bankai Animation Tamil</a>
+          <a href='index.html' className="logo">Ani Folks</a>
           <ul className={isPressed ? 'active' : ''}>
             <li><a href="index.html">Home</a></li>
             <li><a href="vid.html">Videos</a></li>
